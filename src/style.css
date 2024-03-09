@@ -37,6 +37,57 @@ header {
   padding: 20px 25px;
 }
 
+main {
+  padding: 25px 0;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-city {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.weather-details {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.humidity-value,
+.wind-speed-value {
+  color: #f95959;
+  font-weight: 600;
+}
+
+.temperature-display {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.temperature-icon {
+  margin-top: 15px;
+  font-size: 40px;
+}
+
+.temperature-value {
+  font-size: 75px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.temperature-unit {
+  font-size: 30px;
+  margin-top: 12px;
+}
+
+a {
+  color: #f29696;
+}
+
 footer {
   border-top: 1px solid #e3e3e3;
   padding: 30px 0 0 0;
