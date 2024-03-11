@@ -6,13 +6,20 @@ function displayWeather(response) {
   let humidityElement = document.querySelector("#humidity-value");
   let windElement = document.querySelector("#wind-speed-value");
   let dateElement = document.querySelector("#current-date");
+  let iconElement = document.querySelector("#temperature-icon");
   let date = new Date(response.data.time * 1000);
+
+  console.log(response.data);
 
   city.innerHTML = response.data.city;
   conditionsElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureValueElement.innerHTML = Math.round(temperature);
+  iconElement.innerHTML = `<img
+                src="${response.data.condition.icon_url}"
+                class="temperature-icon"
+              />`;
   dateElement.innerHTML = formatDate(date);
 }
 

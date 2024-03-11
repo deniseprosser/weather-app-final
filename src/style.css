@@ -69,19 +69,19 @@ main {
 }
 
 .temperature-icon {
-  margin-top: 15px;
-  font-size: 40px;
+  width: 88px;
+  height: 88px;
 }
 
 .temperature-value {
   font-size: 75px;
   font-weight: 700;
-  margin-left: 10px;
+  line-height: 88px;
 }
 
 .temperature-unit {
   font-size: 30px;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 a {
