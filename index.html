@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-city" id="current-city">London</h1>
+            <h1 class="weather-city" id="current-city"></h1>
             <p class="weather-details">
               Saturday 10:21, clear sky <br />
               Humidity: <span class="humidity-value">69%</span>, Wind:
@@ -37,7 +38,7 @@
           </div>
           <div class="temperature-display">
             <div class="temperature-icon">☀️</div>
-            <div class="temperature-value">11</div>
+            <div class="temperature-value" id="temperature-value"></div>
             <div class="temperature-unit">°C</div>
           </div>
         </div>
