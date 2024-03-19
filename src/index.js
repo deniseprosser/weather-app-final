@@ -9,8 +9,6 @@ function displayWeather(response) {
   let iconElement = document.querySelector("#temperature-icon");
   let date = new Date(response.data.time * 1000);
 
-  console.log(response.data);
-
   city.innerHTML = response.data.city;
   conditionsElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
